@@ -1,25 +1,65 @@
-#wrapper{
-	padding: 0;
+#wrapper {
+	padding: 0px;
 	margin: 0 auto;
 	width: 1920;
 	border: 1px colid #111111;
 }
 
-#header{
+#header { 
 	height: 90px;
-	background-color: #0DF307;
+	background-color: #00AF25;
+	position: relative;
 }
 
-#sidebar{
+#sidebar {
 	height: 395px;
-	background-color: #A2A0A0;
+	background-color: #E8EAE9;
 }
 
-#content{
+#content {
 	
 }
 
-#footer{
+#footer {
 	height: 120px;
 	background-color: #000000;
 }
+
+#headUl {
+	padding: 0px;
+	margin: 0 auto;
+	font-size: 38.75px;
+	width: 640px;
+	height: 50px;
+	outline: 2px solid #cccccc;
+	position: absolute;
+	top: 26px;
+	left: 612px;
+}
+
+#headUl li {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px; 
+}
+
+#headUl li a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#headUl li a:hover {
+	text-decoration: none;
+	color: #000000;
+	outline: 2px solid #000000;
+}
+
+/* #circle{
+	width: 150px;
+	height: 155px;
+	background-image: url(../images/ellipce.png); 
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 428px;
+	top: 19px;
+} */
