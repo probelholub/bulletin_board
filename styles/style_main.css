@@ -3,21 +3,26 @@
 	margin: 0 auto;
 	width: 1920;
 	border: 1px colid #111111;
+	max-width: 1920px;
 }
 
 #header { 
 	height: 90px;
+	background-image: url(../images/header_image.png);
+	background-repeat: repeat-x;
 	background-color: #00AF25;
 	position: relative;
 }
 
 #sidebar {
 	height: 395px;
+	background-image: url(../images/sidebar_image.png);
+	background-repeat: repeat-x;
 	background-color: #E8EAE9;
 }
 
 #content {
-	
+	height: 400px;
 }
 
 #footer {
@@ -25,13 +30,15 @@
 	background-color: #000000;
 }
 
+/*Внешний вид заголовка*/
 #headUl {
-	padding: 0px;
+	list-style: none;
+	padding: 0;
 	margin: 0 auto;
 	font-size: 38.75px;
 	width: 640px;
 	height: 50px;
-	outline: 2px solid #cccccc;
+	/* outline: 2px solid #cccccc; */
 	position: absolute;
 	top: 26px;
 	left: 612px;
@@ -53,6 +60,7 @@
 	color: #000000;
 	outline: 2px solid #000000;
 }
+/*Внешний вид заголовка*/
 
 /* #circle{
 	width: 150px;
