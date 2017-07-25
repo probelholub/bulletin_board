@@ -1,0 +1,17 @@
+.imageM {
+	float: left;
+	background-size: contain;
+	background-color: #E8EAE9;
+}
+
+.contentReg {
+	margin: 0 366px;
+}
+
+.headerPop {
+	margin-left: 346px;
+}
+
+.section {
+	margin: 20px auto;
+}

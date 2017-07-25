@@ -24,7 +24,7 @@
 
 #footer {
 	height: 120px;
-	background-color: #000000;
+	background-color: #333333;
 }
 
 /*Внешний вид заголовка*/
@@ -53,35 +53,39 @@
 }
 
 #headUl li a:hover {
-	text-decoration: none;
 	color: #000000;
 	outline: 2px solid #000000;
 }
 /*Внешний вид заголовка*/
 
-.imageM {
+/*Внешний вид окончания*/
+#footerUl {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 38.75px;
+	width: 640px;
+	height: 50px;
+	/* outline: 2px solid #cccccc; */
+	position: relative;
+	top: 27px;
+	left: 0px;
+}
+
+#footerUl li {
 	float: left;
-	background-size: contain;
-	background-color: #E8EAE9;
+	margin-left: 10px;
+	margin-right: 10px; 
 }
 
-.contentReg {
-	margin: 0 366px;
-}
+/*Внешний вид окончания*/
 
-.headerPop {
-	margin-left: 346px;
-}
-
-#forSpan {
-	float: right;
-}
-/* #circle{
-	width: 150px;
-	height: 155px;
-	background-image: url(../images/ellipce.png); 
+ #circle{
+	width: 163px;
+	height: 173px;
+	background-image: url(../images/ellipce2.png); 
 	background-repeat: no-repeat;
 	position: absolute;
-	left: 428px;
-	top: 19px;
-} */
+	left: 421px;
+	top: 0px;
+} 
