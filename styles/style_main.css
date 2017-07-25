@@ -21,9 +21,6 @@
 	background-color: #E8EAE9;
 }
 
-#content {
-	height: 400px;
-}
 
 #footer {
 	height: 120px;
@@ -62,6 +59,23 @@
 }
 /*Внешний вид заголовка*/
 
+.imageM {
+	float: left;
+	background-size: contain;
+	background-color: #E8EAE9;
+}
+
+.contentReg {
+	margin: 0 366px;
+}
+
+.headerPop {
+	margin-left: 346px;
+}
+
+#forSpan {
+	float: right;
+}
 /* #circle{
 	width: 150px;
 	height: 155px;
