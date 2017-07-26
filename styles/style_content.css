@@ -1,17 +1,68 @@
-.imageM {
-	float: left;
-	background-size: contain;
-	background-color: #E8EAE9;
+#content {
+	margin-left: 366px;
 }
 
 .contentReg {
-	margin: 0 366px;
+	margin: 0;
+	padding: 0;
 }
 
 .headerPop {
-	margin-left: 346px;
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+	font-weight: bold;
 }
 
 .section {
-	margin: 20px auto;
+	padding: 0;
+	margin: 20px 20px;
+	width: 1200px;
+	height: 123px;
+}
+
+.image_wrapper {
+	margin: 0;
+	padding: 0;
+	width: 246px;
+	height: 123px;
+	margin: 0 20px;
+	text-align: center;
+	background-color: #E8EAE9;
+	float: left;
+}
+
+.adName {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.adPrice {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	float: right;
+	top: -123px;
+	left: 0px;
+	clear: both;
+}
+
+.adDate {
+	font-weight: bold;
+	margin-left: 10px;
+	position: relative;
+	float: bottom;
+	clear: both;
+	top: -50px;
+	left: 276px;
+}
+
+.adPlace {
+	font-weight: bold;
+	margin-left: 10px;
+	position: relative;
+	float: bottom;
+	clear: both;
+	top: -50px;
+	left: 276px
 }

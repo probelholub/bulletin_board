@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles/css_reset.css">
 	<link rel="stylesheet" type="text/css" href="styles/style_main.css">
 	<link rel="stylesheet" type="text/css" href="styles/style_sidebar.css">
 	<link rel="stylesheet" type="text/css" href="styles/style_content.css">
+	<link rel="stylesheet" type="text/css" href="styles/style_footer.css">
+
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
 			<div id="circle"></div>
 
-			<ul id="headUl">
+			<ul id="head_list">
 				<li><a href="">Главная</a></li>
 				<li><a href="">О нас</a></li>
 				<li><a href="">Создать объявление</a></li>
@@ -54,25 +57,38 @@
 		</div>
 
 		<div id="content">
+
 			<h1 class="headerPop">Популярные</h1>
 
 			<div class="contentReg">
 				<div class="section">
-					<img src="images/pizza.png" class="imageM">
+					<div class="image_wrapper"><img src="images/pizza.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Доставка пиццы</div>
+						<div class="adPrice">574 рублей</div>
+						<div><a href="">Услуги</a> -- Доставка</div>
+						<div class="adDate">14 ноября</div>
+						<div class="adPlace">Минск</div> 
 					</p>
 				</div>
 				<div class="section">
-					<img src="images/tennis.png" class="imageM">
+					<div class="image_wrapper"><img src="images/tennis.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Теннисный клуб</div>
+						<div class="adPrice">404 рублей</div>
+						<div><a href="">Спорт</a> -- Клубы и залы</div>
+						<div class="adDate">15 марта</div>
+						<div class="adPlace">Брест</div> 
 					</p>
 				</div>
 				<div class="section">
-					<img src="images/gym.png" class="imageM">
+					<div class="image_wrapper"><img src="images/gym.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Доставка пиццы</div>
+						<div class="adPrice">574 рублей</div>
+						<div><a href="">Услуги</a> -- Доставка</div>
+						<div class="adDate">14 ноября</div>
+						<div class="adPlace">Минск</div> 
 					</p>
 				</div>
 			</div>
@@ -81,21 +97,33 @@
 
 			<div class="contentReg">
 				<div class="section">
-					<img src="images/office.png" class="imageM">
+					<div class="image_wrapper"><img src="images/office.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Доставка пиццы</div>
+						<div class="adPrice">574 рублей</div>
+						<div><a href="">Услуги</a> -- Доставка</div>
+						<div class="adDate">14 ноября</div>
+						<div class="adPlace">Минск</div> 
 					</p>
 				</div>
 				<div class="section">
-					<img src="images/clock.png" class="imageM">
+					<div class="image_wrapper"><img src="images/clock.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Доставка пиццы</div>
+						<div class="adPrice">574 рублей</div>
+						<div><a href="">Услуги</a> -- Доставка</div>
+						<div class="adDate">14 ноября</div>
+						<div class="adPlace">Минск</div> 
 					</p>
 				</div>
 				<div class="section">
-					<img src="images/home.png" class="imageM">
+					<div class="image_wrapper"><img src="images/home.png"></div>
 					<p>
-						Доставка пиццы <span class="forSpan">574 рублей</span><br><a href="">Услуги</a> -- Доставка <br><br><br><br>14 ноября <br> Минск 
+						<div class="adName">Доставка пиццы</div>
+						<div class="adPrice">574 рублей</div>
+						<div><a href="">Услуги</a> -- Доставка</div>
+						<div class="adDate">14 ноября</div>
+						<div class="adPlace">Минск</div> 
 					</p>
 				</div>
 			</div>
@@ -103,14 +131,27 @@
 		</div>
 
 		<div id="footer">
-			<ul id="footerUl">
-				<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
-				<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
-				<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
-				<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
-				<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
 
-			</ul>
+			<div id="footer_list">
+				<ul>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+					<li><a href="https://twitter.com/" target="_blank"><img src="images/logo/twitter_logo.png"></a></li>
+				</ul>
+			</div>
+
+			<div id="footer_list_2">	
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Создать объявление</a></li>
+				</ul>
+			</div>
+
 		</div>
 	</div>
 </body>

@@ -6,16 +6,15 @@
 	color: #000000;
 	width: 1236px;
 	height: 205px;
-	/* outline: 2px solid #cccccc; */
 	position: relative;
-	top: 115px;
+	top: 100px;
 	left: 332px;
 }
 
 .menu_list {
 	width: 250px;
 	float: left;
-	padding: 25px 42px 25px 120px;
+	padding: 30px 42px 30px 120px;
 }
 .menu_list a{
 	display: block;
@@ -24,14 +23,11 @@
 }
 
 .menu_list li a:hover {
-	
 	outline: 2px solid #000000;
 }
 
-
-
 /* Вложенное меню */
-.menu_drop {
+.menu_drop{
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -55,7 +51,7 @@
 	padding: 10px 42px 10px 120px;
 }
 
-.menu_list:active .menu_drop{
+.menu_list:active .menu_drop {
 	display: block;
 }
 

@@ -21,64 +21,42 @@
 	background-color: #E8EAE9;
 }
 
-
 #footer {
+	margin: 0;
+	padding: 0; 
 	height: 120px;
 	background-color: #333333;
 }
 
 /*Внешний вид заголовка*/
-#headUl {
+#head_list {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
 	font-size: 38.75px;
 	width: 640px;
 	height: 50px;
-	/* outline: 2px solid #cccccc; */
 	position: absolute;
 	top: 26px;
 	left: 612px;
 }
 
-#headUl li {
+#head_list li {
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px; 
 }
 
-#headUl li a {
+#head_list li a {
 	text-decoration: none;
 	color: #000000;
 }
 
-#headUl li a:hover {
+#head_list li a:hover {
 	color: #000000;
 	outline: 2px solid #000000;
 }
 /*Внешний вид заголовка*/
-
-/*Внешний вид окончания*/
-#footerUl {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	font-size: 38.75px;
-	width: 640px;
-	height: 50px;
-	/* outline: 2px solid #cccccc; */
-	position: relative;
-	top: 27px;
-	left: 0px;
-}
-
-#footerUl li {
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px; 
-}
-
-/*Внешний вид окончания*/
 
  #circle{
 	width: 163px;
