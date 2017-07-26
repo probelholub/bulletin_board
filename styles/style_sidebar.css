@@ -12,19 +12,35 @@
 }
 
 .menu_list {
-	width: 250px;
+	display: block;
+	width: 350px;
 	float: left;
-	padding: 30px 42px 30px 120px;
+	margin: 0;
+	padding: 20px 20px 10px 20px;
+	/* outline: 2px solid #cccccc; */
 }
 .menu_list a{
-	display: block;
 	color: #000000;
 	text-decoration: none;
 }
 
-.menu_list li a:hover {
+.menu_list:hover {
 	outline: 2px solid #000000;
 }
+
+/* Рисунок для sidebar */
+.menu_list:before { 
+	margin-right: 10px;
+    content: " ";  
+    float: left; 
+	position: relative; 
+	top: -10px;
+    background: url(../images/sidebar/ball.png);  
+    display: block;  
+    height: 74px;  
+    width: 74px; 
+}
+/* Рисунок для sidebar */  
 
 /* Вложенное меню */
 .menu_drop{
