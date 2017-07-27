@@ -8,7 +8,7 @@
 	height: 205px;
 	position: relative;
 	top: 100px;
-	left: 332px;
+	left: 366px;
 }
 
 .menu_list {
@@ -35,11 +35,51 @@
     float: left; 
 	position: relative; 
 	top: -10px;
-    background: url(../images/sidebar/ball.png);  
     display: block;  
     height: 74px;  
     width: 74px; 
 }
+
+.menu_list.li1:before { 
+	background: url(../images/sidebar/shirt.png); 
+	}
+
+.menu_list.li2:before { 
+	background: url(../images/sidebar/key.png); 
+	}
+
+.menu_list.li3:before { 
+	background: url(../images/sidebar/work.png); 
+	}
+
+.menu_list.li4:before { 
+	background: url(../images/sidebar/ball.png); 
+	}
+
+.menu_list.li5:before { 
+	background: url(../images/sidebar/phone.png); 
+	}
+
+.menu_list.li6:before { 
+	background: url(../images/sidebar/home.png); 
+	}	
+
+/* Стрелочка справа и ее поворот */
+.menu_list::after {
+	padding: 0;
+	margin: 0;
+	content: " ";
+	position: relative;
+	border: 10px solid;
+	border-color: transparent transparent transparent #000000;
+	float: right;
+	top: 10px;
+}
+.menu_list:active::after {
+	top: 20px;
+	transform: rotate(90deg);
+}
+/* Стрелочка справа и ее поворот */
 /* Рисунок для sidebar */  
 
 /* Вложенное меню */
