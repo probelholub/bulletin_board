@@ -1,39 +1,39 @@
 #footer_list {
-	float: left;
-	list-style: none;
-	margin-left: 366px;
-	padding-top: 27px;
-	width: 640px;
-	height: 80px;
+  float: left;
+  list-style: none;
+  margin-left: 366px;
+  padding-top: 27px;
+  width: 640px;
+  height: 80px;
 }
 
 #footer_list li {
-	float: left;
-	margin-right: 20px; 
+  float: left;
+  margin-right: 20px;
 }
 
 #footer_list_2 {
-	list-style: none;
-	padding: 0;
-	margin-left: 1050px;
-	padding-top: 40px;
-	font-size: 30px;
-	width: 670px;
-	height: 60px;
-	/* outline: 2px solid #cccccc; */
+  list-style: none;
+  padding: 0;
+  margin-left: 1050px;
+  padding-top: 40px;
+  font-size: 30px;
+  width: 670px;
+  height: 60px;
+  /* outline: 2px solid #cccccc; */
 }
 
 #footer_list_2 li {
-	float: left;
-	margin-right: 30px; 
+  float: left;
+  margin-right: 30px;
 }
 
 #footer_list_2 li a {
-	text-decoration: none;
-	color: #FFFFFF;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 #footer_list_2 li a:hover {
-	color: #FFFFFF;
-	outline: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  outline: 2px solid #FFFFFF;
 }
