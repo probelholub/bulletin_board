@@ -1,39 +1,34 @@
 #wrapper {
-	padding: 0px;
-	margin: 0 auto;
-	width: 1920;
-	border: 1px colid #111111;
-	max-width: 1920px;
+  padding: 0px;
+  margin: 0 auto;
+  width: 1920; /* Are you serious? I have 1366px width on my laptop */
+  border: 1px colid #111111;
+  max-width: 1920px;
 }
 
-#header { 
-	height: 90px;
-	background-image: url(../images/header_image.png);
-	background-repeat: repeat-x;
-	background-color: #00AF25;
-	position: relative;
+.page-width {
+  width: 1240px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#header {
+  height: 90px;
+  background-image: url(../images/header_image.png);
+  background-repeat: repeat-x;
+  background-color: #00AF25;
 }
 
 #sidebar {
-	height: 395px;
-	background-image: url(../images/sidebar_image.png);
-	background-repeat: repeat-x;
-	background-color: #E8EAE9;
+  height: 395px;
+  background-image: url(../images/sidebar_image.png);
+  background-repeat: repeat-x;
+  background-color: #E8EAE9;
 }
 
 #footer {
-	margin: 0;
-	padding: 0; 
-	height: 120px;
-	background-color: #333333;
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  background-color: #333333;
 }
-
- #circle{
-	width: 163px;
-	height: 173px;
-	background-image: url(../images/ellipce2.png); 
-	background-repeat: no-repeat;
-	position: absolute;
-	left: 421px;
-	top: 0px;
-} 

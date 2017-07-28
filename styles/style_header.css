@@ -1,55 +1,65 @@
+.header-wrapper {
+  padding-left: 100px;
+  position: relative;
+}
+
+#circle{
+  width: 163px;
+  height: 173px;
+  background-image: url(../images/ellipce2.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
 #head_list {
-	list-style: none;
-	padding: 0;
-	margin: 0 auto;
-	font-size: 38.75px;
-	width: 1040px;
-	height: 50px;
-	position: absolute;
-	top: 26px;
-	left: 612px;
+  list-style: none;
+  padding-top: 25px;
+  font-size: 38.75px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #head_list li {
-	float: left;
-	margin-left: 10px;
-	margin-right: 10px; 
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 #head_list li a {
-	text-decoration: none;
-	color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 #head_list li a:hover {
-	color: #000000;
-	outline: 2px solid #000000;
+  color: #000000;
+  outline: 2px solid #000000;
 }
 
 #textbox {
-	margin-top: 5px; 
-    width: 300px; 
-	height: 36px;
-   }
-   input[type="text"] {
-   	padding: 0 0 0 3px;
-	margin: 0;
-   	float: left;
-    width: 260px;
-    height: 36px; 
-    font-size: 24px;
-    text-align: left;
-    color: #A2BBA9;
-    background-color: #006010;
-    outline: none;
-    border: none;
-    vertical-align: middle;
-   }
+  margin-top: 5px;
+  width: 300px;
+  height: 36px;
+}
+input[type="text"] {
+  padding: 0 0 0 3px;
+  margin: 0;
+  float: left;
+  width: 260px;
+  height: 36px;
+  font-size: 24px;
+  text-align: left;
+  color: #A2BBA9;
+  background-color: #006010;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
 
 .button {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	width: 36px;
-	height: 36px; 
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 36px;
+  height: 36px;
 }
