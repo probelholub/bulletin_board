@@ -11,6 +11,9 @@
   position: relative;
   margin: 0 auto;
 }
+.clear {
+  clear: both;
+}
 
 #header {
   height: 90px;
