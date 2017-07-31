@@ -3,7 +3,7 @@
   position: relative;
 }
 
-#circle{
+.circle{
   width: 163px;
   height: 173px;
   background-image: url(../images/ellipce2.png);
@@ -11,32 +11,32 @@
   display: inline-block;
 }
 
-#head_list {
+.head_list {
   list-style: none;
   padding-top: 25px;
-  font-size: 38.75px;
+  font-size: 36px;
   height: 50px;
   display: inline-block;
   vertical-align: top;
 }
 
-#head_list li {
+.head_list li {
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#head_list li a {
+.head_list li a {
   text-decoration: none;
   color: #000000;
 }
 
-#head_list li a:hover {
+.head_list li a:hover {
   color: #000000;
   outline: 2px solid #000000;
 }
 
-#textbox {
+.textbox {
   margin-top: 5px;
   width: 300px;
   height: 36px;
