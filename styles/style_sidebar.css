@@ -7,7 +7,7 @@
 	width: 1236px;
 	height: 205px;
 	position: relative;
-	top: 100px;
+	float: left;
 }
 
 .menu_list {
@@ -33,10 +33,12 @@
     content: " ";  
     float: left; 
 	position: relative; 
-	top: -10px;
-    display: block;  
-    height: 74px;  
-    width: 74px; 
+	top: -15px;
+	left: 0px;
+    display: inline-block;  
+    height: 71px;  
+    width: 71px; 
+
 }
 
 .menu_list.li1:before { 
@@ -57,6 +59,8 @@
 
 .menu_list.li5:before { 
 	background: url(../images/sidebar/phone.png); 
+	background-repeat:no-repeat;
+	background-position:center;
 	}
 
 .menu_list.li6:before { 
@@ -84,8 +88,6 @@
 /* Вложенное меню */
 .menu_drop{
 	list-style: circle;
-	padding: 0;
-	margin: 0;
 	font-size: 16px;
 	color: #000000;
 	position: absolute;

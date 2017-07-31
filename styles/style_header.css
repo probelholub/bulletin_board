@@ -1,14 +1,15 @@
 .header-wrapper {
-  padding-left: 100px;
+  padding-left: 250px;
   position: relative;
 }
 
 .circle{
-  width: 163px;
-  height: 173px;
-  background-image: url(../images/ellipce2.png);
+  width: 141px;
+  height: 141px;
+  margin: 18px;
+  background-image: url(../images/ellipce.png);
   background-repeat: no-repeat;
-  display: inline-block;
+  float: left;
 }
 
 .head_list {
@@ -17,13 +18,17 @@
   font-size: 36px;
   height: 50px;
   display: inline-block;
-  vertical-align: top;
+  overflow: hidden;
 }
 
 .head_list li {
+  border-left: 1px solid #00BA31;
+  border-right: 1px solid #009923;
   float: left;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 -1px 0 -1px;
+
 }
 
 .head_list li a {
@@ -62,4 +67,18 @@ input[type="text"] {
   border: 0;
   width: 36px;
   height: 36px;
+}
+
+.ad-text-fh {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ad-text-wrapper-fh {
+  display: table;
+ }
+
+.table-cell-fh {
+  display: table-cell;
 }
