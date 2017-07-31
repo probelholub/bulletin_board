@@ -1,8 +1,6 @@
 .footer_list {
-  float: left;
-  display: inline-block;
   list-style: none;
-  padding-top: 27px;
+  vertical-align: middle;
   width: 50%;
   height: 80px;
 }
@@ -14,16 +12,15 @@
 
 .footer_list_2 {
   width: 50%;
-  height: 60px;
-  text-align: center;
-  display: inline-block;
+  height: 80px;
+  vertical-align: middle;
   list-style: none;
   font-size: 30px;
 }
 
 .footer_list_2 li {
   float: left;
-  margin-right: 30px;
+  margin-left: 50px;
 }
 
 .footer_list_2 li a {
@@ -34,4 +31,24 @@
 .footer_list_2 li a:hover {
   color: #FFFFFF;
   outline: 2px solid #FFFFFF;
+}
+
+.ad-text-ff {
+  width: 100%;
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ad-text-wrapper-ff {
+  display: table;
+ }
+
+.table-cell-ff {
+  display: table-cell;
+}
+
+.copyright {
+  float: right;
+  color: #FFFFFF;
 }
