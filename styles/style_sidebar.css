@@ -107,8 +107,11 @@
 	padding: 10px 42px 10px 30px;
 }
 
-.menu_list:active .menu_drop {
+/* .menu_list:active .menu_drop {
+	display: block;
+}*/
+
+.menu_drop_hidden {
 	display: block;
 }
-
 /* Вложенное меню */
