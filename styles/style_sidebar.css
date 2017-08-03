@@ -68,7 +68,7 @@
 	}	
 
 /* Стрелочка справа и ее поворот */
-.menu_list::after {
+.close.menu_list::after{
 	padding: 0;
 	margin: 0;
 	content: " ";
@@ -78,9 +78,15 @@
 	float: right;
 	top: 10px;
 }
-.menu_list:active::after {
+.open.menu_list::after{
+	padding: 0;
+	margin: 0;
+	content: " ";
+	position: relative;
+	border: 10px solid;
+	border-color: #000000 transparent transparent transparent ;
+	float: right;
 	top: 20px;
-	transform: rotate(90deg);
 }
 /* Стрелочка справа и ее поворот */
 /* Рисунок для sidebar */  
