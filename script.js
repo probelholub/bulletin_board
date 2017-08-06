@@ -21,11 +21,6 @@ tree.onclick = function(event) {
             childrenContainer.classList.add('menu_drop_hidden');
             target.classList.add("open");//open pseudo-after
           }
-          else{
-            childrenContainer.classList.remove('menu_drop_hidden');
-            target.classList.remove("open");//open pseudo-after
-            target.classList.add("close");
-          }
           return;
         }
         target = target.parentNode;
