@@ -39,12 +39,32 @@ search_drop.onfocus = function(event) {
   }
 }
 
+search_drop.onchange = function(event) {
+  if(search_textbox.lastElementChild.classList.contains('search_drop_menu')){
+    search_textbox.lastElementChild.remove();
+  }
+}
+
 search_drop.oninput = function(event){
   
-  var search_list = ['доставка пиццы','теннисный клуб','доска','']
+  var search_list = ['доставка пиццы','теннисный клуб','доска','дос','дос','дос','дос','дос','дос']
   var list_after = [];
   var check_on_drop = search_textbox.lastElementChild.classList.contains('search_drop_menu');
   
+  function create_menu(list_after) {//создание вложенного списка
+    var search_drop_menu = document.createElement('div');
+    var ul_search = document.createElement('ul');
+    for (var i = 0; i < list_after.length; i++) {
+      var li_search = document.createElement('li');
+      li_search.innerHTML = list_after[i];
+      ul_search.appendChild(li_search);
+    }
+    search_drop_menu.appendChild(ul_search);
+    search_drop_menu.className = 'search_drop_menu';
+    return search_drop_menu;
+  }
+
+
   if(search_drop.value.length > 2){
     for (var i = 0; i < search_list.length; i++) {
       if( ~search_list[i].indexOf(search_drop.value.toLowerCase()) ){
@@ -53,16 +73,12 @@ search_drop.oninput = function(event){
     }
 
     if(list_after.length != 0){
-      if( !check_on_drop ){// проверка, было ли уже добавлено меню
-        var search_drop_menu = document.createElement('div');
-        search_drop_menu.className = 'search_drop_menu';
-        search_drop_menu.innerHTML = list_after[0];
+      if( !check_on_drop ){// проверка, было ли уже добавлено меню в search_textbox
+        var search_drop_menu = create_menu(list_after);
         search_textbox.appendChild(search_drop_menu);//добавление нового
       }
       else{
-        var search_drop_menu = document.createElement('div');
-        search_drop_menu.className = 'search_drop_menu';
-        search_drop_menu.innerHTML = list_after[0];
+        var search_drop_menu = create_menu(list_after);
         search_textbox.replaceChild(search_drop_menu, search_textbox.lastElementChild);//замена старого
       }
     }

@@ -87,6 +87,6 @@ input[type="text"] {
 .search_drop_menu {
   position: relative;
   background-color: #006010;
-  height: 100px;
-  width: 100px;
+  width: 260px;
+  border: 2px solid #000000;
 }
