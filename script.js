@@ -32,6 +32,13 @@ tree.onclick = function(event) {
 /*create drop-menu search*/
 var search_drop = document.getElementsByClassName('searchbox')[0];
 var search_textbox = document.getElementsByClassName('textbox')[0];
+var search = document.getElementsByClassName('search_drop_menu')[0];
+
+function checkLastChild() {
+  if(search_textbox.lastElementChild.classList.contains('search_drop_menu')){
+    search_textbox.lastElementChild.remove();
+  }
+}
 
 search_drop.onfocus = function(event) {
   if(search_drop.value == 'Поиск...'){
@@ -40,13 +47,10 @@ search_drop.onfocus = function(event) {
 }
 
 search_drop.onchange = function(event) {
-  if(search_textbox.lastElementChild.classList.contains('search_drop_menu')){
-    search_textbox.lastElementChild.remove();
-  }
+  checkLastChild();
 }
 
 search_drop.oninput = function(event){
-  
   var search_list = ['доставка пиццы','теннисный клуб','доска','дос','дос','дос','дос','дос','дос']
   var list_after = [];
   var check_on_drop = search_textbox.lastElementChild.classList.contains('search_drop_menu');
@@ -64,8 +68,7 @@ search_drop.oninput = function(event){
     return search_drop_menu;
   }
 
-
-  if(search_drop.value.length > 2){
+  if(search_drop.value.length > 2){//поиск введенной подстроки
     for (var i = 0; i < search_list.length; i++) {
       if( ~search_list[i].indexOf(search_drop.value.toLowerCase()) ){
         list_after.push(search_list[i]);
@@ -83,17 +86,12 @@ search_drop.oninput = function(event){
       }
     }
     else{
-      if(check_on_drop){
-        search_textbox.lastElementChild.remove();//удаление меню при несовпадении строк
-      }
+      checkLastChild();//удаление меню при несовпадении строк
     }
   }
   else{
-    if(check_on_drop){
-      search_textbox.lastElementChild.remove();//удаление меню при длине < 2
-    }
+    checkLastChild();//удаление меню при длине < 2
   }
-  
 }
 /*create drop-menu search*/     
     

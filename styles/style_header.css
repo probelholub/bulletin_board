@@ -90,3 +90,10 @@ input[type="text"] {
   width: 260px;
   border: 2px solid #000000;
 }
+
+.search_drop_li {
+  float: left;
+}
+
+
+/* style search_drop_menu */
