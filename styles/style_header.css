@@ -82,3 +82,11 @@ input[type="text"] {
 .table-cell-fh {
   display: table-cell;
 }
+
+/* style search_drop_menu */
+.search_drop_menu {
+  position: relative;
+  background-color: #006010;
+  height: 100px;
+  width: 100px;
+}

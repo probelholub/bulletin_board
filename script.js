@@ -1,3 +1,4 @@
+/*create open-close drop_menu*/
 var tree = document.getElementsByClassName('menu_sidebar')[0];
 var treeList = tree.getElementsByClassName('menu_list');
 var treeListArray = [].slice.call(treeList);
@@ -26,6 +27,57 @@ tree.onclick = function(event) {
         target = target.parentNode;
       }
     }
-      
-     
+/*create open-close drop_menu*/
+
+/*create drop-menu search*/
+var search_drop = document.getElementsByClassName('searchbox')[0];
+var search_textbox = document.getElementsByClassName('textbox')[0];
+
+search_drop.onfocus = function(event) {
+  if(search_drop.value == 'Поиск...'){
+    search_drop.value = '';
+  }
+}
+
+search_drop.oninput = function(event){
+  
+  var search_list = ['доставка пиццы','теннисный клуб','доска','']
+  var list_after = [];
+  var check_on_drop = search_textbox.lastElementChild.classList.contains('search_drop_menu');
+  
+  if(search_drop.value.length > 2){
+    for (var i = 0; i < search_list.length; i++) {
+      if( ~search_list[i].indexOf(search_drop.value.toLowerCase()) ){
+        list_after.push(search_list[i]);
+      }
+    }
+
+    if(list_after.length != 0){
+      if( !check_on_drop ){// проверка, было ли уже добавлено меню
+        var search_drop_menu = document.createElement('div');
+        search_drop_menu.className = 'search_drop_menu';
+        search_drop_menu.innerHTML = list_after[0];
+        search_textbox.appendChild(search_drop_menu);//добавление нового
+      }
+      else{
+        var search_drop_menu = document.createElement('div');
+        search_drop_menu.className = 'search_drop_menu';
+        search_drop_menu.innerHTML = list_after[0];
+        search_textbox.replaceChild(search_drop_menu, search_textbox.lastElementChild);//замена старого
+      }
+    }
+    else{
+      if(check_on_drop){
+        search_textbox.lastElementChild.remove();//удаление меню при несовпадении строк
+      }
+    }
+  }
+  else{
+    if(check_on_drop){
+      search_textbox.lastElementChild.remove();//удаление меню при длине < 2
+    }
+  }
+  
+}
+/*create drop-menu search*/     
     
