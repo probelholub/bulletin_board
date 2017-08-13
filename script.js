@@ -46,12 +46,15 @@ search_drop.onfocus = function(event) {
   }
 }
 
-search_drop.onchange = function(event) {
-  checkLastChild();
-}
+/*search_drop.onchange = function(event) {
+  target = event.target;
+  if(!target.classList.contains('search_drop_li')){
+    checkLastChild();
+  }
+}*/
 
 search_drop.oninput = function(event){
-  var search_list = ['доставка пиццы','теннисный клуб','доска','дос','дос','дос','дос','дос','дос']
+  var search_list = ['доставка пиццы','теннисный клуб','доска','дос','дос','дос','дос','дос','дос','дос','дос','дос','дос','дос']
   var list_after = [];
   var check_on_drop = search_textbox.lastElementChild.classList.contains('search_drop_menu');
   
@@ -61,6 +64,7 @@ search_drop.oninput = function(event){
     for (var i = 0; i < list_after.length; i++) {
       var li_search = document.createElement('li');
       li_search.innerHTML = list_after[i];
+      li_search.className = 'search_drop_li';
       ul_search.appendChild(li_search);
     }
     search_drop_menu.appendChild(ul_search);
@@ -93,5 +97,16 @@ search_drop.oninput = function(event){
     checkLastChild();//удаление меню при длине < 2
   }
 }
-/*create drop-menu search*/     
-    
+/*create drop-menu search*/    
+ 
+/*add functional search_drop_li*/
+onclick = function(event) {
+  var target = event.target;
+  if(target.classList.contains('search_drop_li')){
+    search_drop.value = target.innerHTML;
+    checkLastChild();
+  }
+  else{
+    checkLastChild();
+  }
+}
